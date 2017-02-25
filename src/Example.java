@@ -12,18 +12,30 @@ public class Example {
         int x = SkeletonJava.readIntConsole("x=");
         int y = SkeletonJava.readIntConsole("y=");
 
-        int sum = x ;
+
+        int max,min;
+        if(x>y) {
+            max = x;
+            min = y;
+        }
+        else{
+            max =y;
+            min = x;
+        }
+        System.out.println(max + "|" + min);
+        int sum = max ;
         /*while(y!=0){
             sum +=1;
             y-=1;
         }
         */
-        for(int i = 1; i<=y; i++)
+        for(int i = 1; i<=min; i++)
         {
             sum +=1;
+            SkeletonJava.printConsole("Adding 1 to sum");
         }
 
-        SkeletonJava.printConsole(x + "+" + y + "=" + sum);
+        SkeletonJava.printConsole(max + "+" + min + "=" + sum);
     }
 
 }
