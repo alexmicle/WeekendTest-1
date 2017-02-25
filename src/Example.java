@@ -13,8 +13,17 @@ public class Example {
         int y = SkeletonJava.readIntConsole("y=");
 
         int sum = x ;
+        /*while(y!=0){
+            sum +=1;
+            y-=1;
+        }
+        */
+        for(int i = 1; i<=y; i++)
+        {
+            sum +=1;
+        }
 
-        SkeletonJava.printConsole(sum);
+        SkeletonJava.printConsole(x + "+" + y + "=" + sum);
     }
 
 }
