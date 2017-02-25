@@ -12,8 +12,12 @@ public class Example {
         int x = SkeletonJava.readIntConsole("x=");
         int y = SkeletonJava.readIntConsole("y=");
 
-        int sum = Calc.add2(x, y);
-        SkeletonJava.printConsole(x + "+" + y + "=" + sum);
+        //int sum = Calc.add2(x, y);
+        //int dif = Substract.sub(x,y);
+        int prod = Multy.prod(x,y);
+        //SkeletonJava.printConsole(x + "+" + y + "=" + sum);
+        //SkeletonJava.printConsole(x + "-" + y + "=" + dif);
+        SkeletonJava.printConsole(x + "*" + y + "=" + prod);
     }
 
 }
